@@ -1,6 +1,6 @@
 <?php 
 	define('HOST','localhost');
-	define('USERDB','root');
+	define('USERDB','');
 	define('PASSDB','');
 	define('DB','estetica');
 ?>

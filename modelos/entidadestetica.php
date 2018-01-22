@@ -4,6 +4,7 @@ class Estetica{
 	private $se_id;
 	private $se_nombre;
 	private $se_descripcion;
+	private $se_imagenp;
 	private $se_imagen;
 	private $se_categoria_id;
 	private $se_categoria_nombre;

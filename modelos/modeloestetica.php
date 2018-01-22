@@ -23,12 +23,13 @@ class ModelEstetica{
 			$stm->execute();
 			foreach($stm->fetchALL(PDO::FETCH_OBJ) as $r){
 				$esteticas = new Estetica();
-					$esteticas->__SET('se_id', $r->este_id);
-					$esteticas->__SET('se_nombre', $r->este_nombre);
-					$esteticas->__SET('se_descripcion', utf8_encode($r->este_descripcion));
-					$esteticas->__SET('se_imagen', $r->este_imagen);
-					$esteticas->__SET('se_categoria_id', $r->este_categoria_id);
-	                $esteticas->__SET('se_categoria_nombre', $r->este_categoria_nombre);
+					$esteticas->__SET('se_id', $r->servicio_id);
+					$esteticas->__SET('se_nombre', $r->servicio_nombre);
+					$esteticas->__SET('se_descripcion', utf8_encode($r->servicio_descripcion));
+					$esteticas->__SET('se_imagenp', $r->servicio_imagenp);
+					$esteticas->__SET('se_imagen', $r->servicio_imagen);
+					$esteticas->__SET('se_categoria_id', $r->servicio_categoria_id);
+	                $esteticas->__SET('se_categoria_nombre', $r->servicio_categoria_nombre);
 				$result[] = $esteticas->returnArray();
 			}
 			$responsearray['success']=true;
@@ -50,12 +51,13 @@ class ModelEstetica{
             $r = $stm->fetch(PDO::FETCH_OBJ);
 
             $esteticas = new Estetica();
-					$esteticas->__SET('se_id', $r->este_id);
-					$esteticas->__SET('se_nombre', $r->este_nombre);
-					$esteticas->__SET('se_descripcion', utf8_encode($r->este_descripcion));
-					$esteticas->__SET('se_imagen', $r->este_imagen);
-					$esteticas->__SET('se_categoria_id', $r->este_categoria_id);
-	                $esteticas->__SET('se_categoria_nombre', $r->este_categoria_nombre);
+					$esteticas->__SET('se_id', $r->servicio_id);
+					$esteticas->__SET('se_nombre', $r->servicio_nombre);
+					$esteticas->__SET('se_descripcion', utf8_encode($r->servicio_descripcion));
+					$esteticas->__SET('se_imagenp', $r->servicio_imagenp);
+					$esteticas->__SET('se_imagen', $r->servicio_imagen);
+					$esteticas->__SET('se_categoria_id', $r->servicio_categoria_id);
+	                $esteticas->__SET('se_categoria_nombre', $r->servicio_categoria_nombre);
 
             $jsonresponse['success'] = true;
             $jsonresponse['message'] = 'Se obtuvo  correctamente';

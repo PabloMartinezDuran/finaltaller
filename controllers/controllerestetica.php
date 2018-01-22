@@ -16,7 +16,7 @@ header('Access-Control-Allow-Origin: *');
 				break;
 
         case 'obtener':
-            $jsondata = $modeles->Obtener($_REQUEST['esteId']);
+            $jsondata = $modeles->Obtener($_REQUEST['seId']);
             header('Content-type: application/json; charset=utf-8');
             echo json_encode($jsondata);            
             break;		

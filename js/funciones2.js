@@ -6,8 +6,8 @@
     }
     var id = getParameterByName('id');
 
-    function verEstetica(action, esteid){
-        var datay = {"esteId": id,
+    function verEstetica(action, seid){
+        var datay = {"seId": id,
                      "Accion":"obtener"
                     };
                     console.log(datay);
@@ -15,7 +15,7 @@
             data: datay, 
             type: "POST",
             dataType: "json", 
-            url: "/controllers/controllerestetica.php",
+            url: "controllers/controllerestetica.php",
         })
         .done(function(data,textStatus,jqXHR ) {
             if ( console && console.log ) {
@@ -25,7 +25,7 @@
                     + " \n jqXHR.status : " + jqXHR.status );
             }
             $("#titulo").text(data.datos.se_nombre);
-            $("#imgcc").attr("src",data.datos.se_imagen);
+            $("#imges").attr("src",data.datos.se_imagenp);
             $("#descripcion").html(data.datos.se_descripcion);
             $("#categoria").html("Categoria : "+data.datos.se_categoria_nombre);
 
@@ -39,5 +39,5 @@
             }
         });
     }
-   
+   verEstetica();
    

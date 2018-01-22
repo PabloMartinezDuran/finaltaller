@@ -9,7 +9,7 @@
                 data: datax, 
                 type: "GET",
                 dataType: "json", 
-                url: "/controllers/controllerestetica.php", 
+                url: "controllers/controllerestetica.php", 
             })
             .done(function( data, textStatus, jqXHR ) {
                 $("#listado").html("");
@@ -20,14 +20,14 @@
                         + " \n jqXHR.status : " + jqXHR.status );
                 }
                 for(var i=0; i<data.datos.length;i++){
-                                //console.log('id: '+data.datos[i].cc_id + ' nombre: '+data.datos[i].cc_nombre);
-                                var descrip= data.datos[i].este_descripcion;
+                                //console.log('id: '+data.datos[i].servicio_id + ' nombre: '+data.datos[i].servicio_nombre);
+                                var descrip= data.datos[i].servicio_descripcion;
                                 textonuevo = descrip.substr(0,15);
                                     console.log(textonuevo.length);
-                                fila ='<a href="pag1.html?id='+data.datos[i].este_id+'"><div class="row"><div class="col-xs-4"><img src="'+data.datos[i].este_imagen+'"></div>';
+                                fila ='<a href="pag1.html?id='+data.datos[i].se_id+'"><div class="row"><div class="col-xs-4"><img src="'+data.datos[i].se_imagen+'"></div>';
                                 fila +='<div class="col-xs-8">';
-                                fila +='<div class="row"><div class="col-xs-12"><font size="5">'+data.datos[i].este_nombre+'</font></div></div>';
-                                fila +='<div class="row"><div class="col-xs-12"><font size="4">Categoria:'+data.datos[i].este_categoria_nombre+'</font></div></div>';
+                                fila +='<div class="row"><div class="col-xs-12"><font size="5">'+data.datos[i].se_nombre+'</font></div></div>';
+                                fila +='<div class="row"><div class="col-xs-12"><font size="4">Categoria:'+data.datos[i].se_categoria_nombre+'</font></div></div>';
                                 //fila +='<div class="row"><div class="col-xs-12"><font size="2">Bajada</font></div></div>';
                                 fila +='<div class="row"><div class="col-xs-12"><font size="2">Descripcion:'+textonuevo+'...</font></div></div>';
                                 fila +='</div></div></a><br>';
