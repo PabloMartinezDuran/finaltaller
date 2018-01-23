@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-01-2018 a las 21:47:20
+-- Tiempo de generación: 23-01-2018 a las 22:19:01
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 7.1.7
 
@@ -62,10 +62,10 @@ CREATE TABLE `servicio` (
 --
 
 INSERT INTO `servicio` (`servicio_id`, `servicio_nombre`, `servicio_descripcion`, `servicio_imagenp`, `servicio_imagen`, `servicio_precio`, `servicio_categoria_id`) VALUES
-(1, 'descontracturante', 'Masaje cuya finalidad es aliviar tensiones de nuestro organismo producido por el Estrés, genera una relajación profunda. El masaje calma fatiga, insomnio, dolores musculares, cervicales, lumbares, lesiones y traumatismos. Los aceites esenciales que utilizamos son incorporados a través del olfato y a través de la piel. Estos aceites ayudan armonizando las emociones y la mente.\r\nRecupera la elasticidad (sobre los músculos) y se disipan los signos de tensión', 'img/descon1.jpg', 'img/descon1.jpg', 1200, 1),
-(2, 'facial', 'El masaje facial abarca un conjunto de técnicas basadas en manipulaciones manuales sobre el cutis con el propósito de que los tejidos cutáneos dérmicos y musculares conserven por el mayor tiempo posible su elasticidad y firmeza, y dar de esta forma al rostro una apariencia juvenil y hermosa.diferentes en cuestiones térmicas y atm', 'img/facial2.jpg', 'img/facial2.jpg', 3000, 2),
-(3, 'Facial 2', 'El masaje facial abarca un conjunto de técnicas basadas en manipulaciones manuales sobre el cutis con el propósito de que los tejidos cutáneos dérmicos y musculares conserven por el mayor tiempo posible su elasticidad y firmeza, y dar de esta forma al rostro una apariencia juvenil y hermosa.', 'img/facial2.jpg', 'img/facial2.jpg', 4500, 1),
-(4, 'Relajacion', 'Sentirse diferente es disfrutar la vida', 'img/descon.jpg', 'img/descon.jpg', 0, 1);
+(1, 'Descontracturante', 'Masaje cuya finalidad es aliviar tensiones de nuestro organismo producido por el Estrés, genera una relajación profunda. El masaje calma fatiga, insomnio, dolores musculares, cervicales, lumbares, lesiones y traumatismos. Los aceites esenciales que utilizamos son incorporados a través del olfato y a través de la piel. Estos aceites ayudan armonizando las emociones y la mente.\r\nRecupera la elasticidad (sobre los músculos) y se disipan los signos de tensión', 'img/descon1.jpg', 'img/descon1.jpg', 1200, 1),
+(2, 'Facial', 'El masaje facial abarca un conjunto de técnicas basadas en manipulaciones manuales sobre el cutis con el propósito de que los tejidos cutáneos dérmicos y musculares conserven por el mayor tiempo posible su elasticidad y firmeza, y dar de esta forma al rostro una apariencia juvenil y hermosa.diferentes en cuestiones térmicas y atm', 'img/facial.jpg', 'img/facial.jpg', 3000, 2),
+(3, 'Exfoliante', 'El masaje facial abarca un conjunto de técnicas basadas en manipulaciones manuales sobre el cutis con el propósito de que los tejidos cutáneos dérmicos y musculares conserven por el mayor tiempo posible su elasticidad y firmeza, y dar de esta forma al rostro una apariencia juvenil y hermosa.', 'img/imagen.jpg', 'img/imagen.jpg', 4500, 1),
+(4, 'Relajacion', 'Sentirse diferente es disfrutar la vida', 'img/descon.jpg', 'img/descon.jpg', 15000, 1);
 
 --
 -- Índices para tablas volcadas
