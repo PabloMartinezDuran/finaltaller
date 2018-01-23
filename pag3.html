@@ -1,53 +1,63 @@
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body> 
- <body>
-        <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Centro de estetica</a>
-    </div>
-    <ul class="nav navbar-nav">
-       <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="pag1.html">Opcion 1</a></li>
-      <li><a href="pag2.html">Opcion 2</a></li>
-	  <li><a href="pag3.html">Opcion 3</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
-  <h2>Informacion</h2>
-  <p>The .info class indicates a neutral informative change or action:</p>                                                            
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Firstname</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="info">
-        <td>1</td>
-        <td>Anna</td>
-      </tr>
-     <tr>
-        <td>2</td>
-        <td>Debbie</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>John</td>
-      </tr>
-    </tbody>
-   </table>
-</div>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+            -->
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+            <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+            <!--<link rel="stylesheet" type="text/css" href="css/index.css"> -->
+            <title>Hello World</title>
+            <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+            <script src="js/jquery.min.js"></script>
+            <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+            <script src="js/funcionespa.js"></script>
 
-</body>
-</html>
+        </head>
+        <body>
+        <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/imagen2.jpg" class="Centro" style="width:100px"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="pag3.html">Valor</a></li> 
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+
+              </div>
+               </nav>
+               <img src="img/imagen2.jpg" class="Centro" width="90%" height="20%" >
+               
+            <div class="app" >
+            <div class="container" id="listado" align="center" >
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+    </html>

@@ -15,7 +15,7 @@
             data: datay, 
             type: "POST",
             dataType: "json", 
-            url: "controllers/controllerestetica.php",
+            url: "controllers/controlleresteticapa.php",
        
         })
       
@@ -30,6 +30,7 @@
             $("#titulo").text(data.datos.se_nombre);
             $("#imges").attr("src",data.datos.se_imagenp);
             $("#descripcion").html(data.datos.se_descripcion);
+            $("#precio").html(data.datos.se_precio);
             $("#categoria").html("Categoria : "+data.datos.se_categoria_nombre);
 
        

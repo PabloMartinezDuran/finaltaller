@@ -10,7 +10,7 @@
                 data: datax, 
                 type: "GET",
                 dataType: "json", 
-                url: "controllers/controllerestetica.php", 
+                url: "controllers/controlleresteticapa.php", 
             })
             
             .done(function( data, textStatus, jqXHR ) {
@@ -26,12 +26,12 @@
                                 var descrip= data.datos[i].se_descripcion;
                                 textonuevo = descrip.substr(0,0);
                                      console.log(textonuevo.length);
-                                fila ='<a href="pag1.html?id='+data.datos[i].se_id+'"><div class="container"><div class="col-xs-12"><img class="img-circle"  width="70%" height="20%" src="'+data.datos[i].se_imagen+'" ></div>';
-                                fila +='<div class="col-xs-12">';
-                                fila +='<div class="container" ><div class="col-xs-12"><font size="5">'+data.datos[i].se_nombre+'</font></div></div>';
-                                //fila +='<div class="container"><div aling="center"><div class="col-xs-12"><font size="4">Categoria:'+data.datos[i].se_categoria_nombre+'</font></div></div></div>';
-                                fila +='<div class="container"><div class="col-xs-12"><font size="2">Revisa en que consiste'+textonuevo+'</font></div></div>';
-                                fila +='</div></div></a><br>';
+                                fila ='<a href="pag4.html?id='+data.datos[i].se_id+'"><div class="row"><div class="col-xs-4"><img width="100%" height="20%" src="'+data.datos[i].se_imagenp+'"></div>';
+                                fila +='<div class="col-xs-8">';
+                                fila +='<div class="row"><div class="col-xs-12"><font size="5">Masaje '+data.datos[i].se_nombre+'</font></div></div>';
+                                fila +='<div class="container" ><div class="col-xs-12"><font size="5">valor: '+data.datos[i].se_precio+'</font></div></div>';
+                               fila +='<div class="row"><div class="col-xs-12"><font size="4">Categoria:'+data.datos[i].se_categoria_nombre+'</font></div></div>';
+                                fila +='<div class="row"><div class="col-xs-12"><font size="2">'+textonuevo+'</font></div></div>';                                fila +='</div></div></a><br>';
                                 $("#listado").append(fila);
                 }
 

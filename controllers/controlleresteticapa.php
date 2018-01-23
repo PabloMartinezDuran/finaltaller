@@ -1,7 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-	require_once '../modelos/modeloindex/entidadestetica.php';
-	require_once '../modelos/modeloindex/modeloestetica.php';
+	require_once '../modelos/modelo2/entidadestetica.php';
+	require_once '../modelos/modelo2/modeloestetica.php';
 
 	$modeles= new ModelEstetica();
 
